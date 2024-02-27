@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 solution</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin: 0px 20px 10px 20px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 121px;
+        }
+
+        nav ul li {
+            font-size: 16px;
+            border: 2px solid white;
+            list-style: none;
+            display: inline-flex;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0px 10px 10px 10px;
+        }
+
+        .img {
+            justify-content: flex-start;
+        }
+
+        .mainline {
+            font-size: 40px;
+            margin: 59px 149px 36px 260px
+        }
+
+        .secline {
+            width: fit-content;
+            margin: auto;
+            font-size: 25px;
+        }
+
+        .button {
+            background-color: #00b6d1;
+            width: fit-content;
+            border: 2px;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 40px auto;
+        }
+
+        .button a {
+            color: white;
+            font-size: 14px;
+        }
+
+        .theline {
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            margin: 61px 69px 10px 250px;
+        }
+
+        .theline span {
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        .theline img {
+            width: 60px;
+            height: 50px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            row-gap: 5%;
+            column-gap: 2%;
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+
+        .lang {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 5% 0 5% 0;
+        }
+        .lang p {
+            margin: 0;
+        }
+        .bit {
+            background-color: #00b6d1;
+            border-radius: 7px;
+            color: white;
+            font-weight: 700;
+            padding: 5px;
+            border-color: white;
+            border: 2px;
+        }
+
+        .green {
+            background-color: rgb(72, 211, 72);
+            padding: 5px;
+            border-color: white;
+            color: white;
+            font-weight: 700;
+            border-radius: 7px;
+            border: 2px;
+        }
+
+        .bit a {
+            color: whitesmoke;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                margin: 0px;
+            }
+
+            nav ul {
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .mainline {
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            .secline {
+                text-align: center;
+                font-size: medium;
+            }
+
+            .button {
+                margin: 20px auto;
+            }
+
+            .theline {
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            .buttons {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                column-gap: 2%;
+            }
+
+            .lang {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img"><img
+                src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+                alt="company logo" style="width:150px; height:50px;"></div>
+        <nav>
+            <ul>
+                <li>Products &#8595</li>
+                <li>Pricing &#8595</li>
+                <li>Resources &#8595 </li>
+                <li>About us &#8595</li>
+                <li>security</li>
+                <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                        alt="translate" style="width: 17px; height:16px;"></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mainline">
+        Download <strong>UltraEdit</strong> for Windows
+        <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="logo"
+            style="width: 80px; height:25px;">
+    </div>
+    <div class="secline">Download and try UltraEdit before you buy it! This download includes the
+        full Windows</div>
+    <div class="secline">version of the text editor.</div>
+    <div class="button"><a href="https://www.ultraedit.com/downloads/uex-thank-you/"
+            style="text-decoration:none"><strong>DOWNLOAD MAC OR LINUX VERSION</a> </div>
+    <div class="theline">
+        <img src="7k64b02f.png" alt="logo">
+        <span>Download UltraEdit</span>v2023.2(released 2023/12/15) | Hotfix
+    </div>
+
+    <div class="buttons">
+        
+        <div class="lang ">
+            <p>English</p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+
+        <div class="lang ">
+            <p>Deutsch</p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+        <div class="lang ">
+            <p>Italiano</p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+
+        <div class="lang ">
+            <p>Español</p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+
+        <div class="lang ">
+            <p>français </p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+
+        <div class="lang ">
+            <p style="margin: 20px 4px 5px 50px;">Português brasileiro </p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+        <div class="lang ">
+            <p>日本 </p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+
+        <div class="lang ">
+            <p>한국어 </p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+
+        <div class="lang ">
+            <p>中国 </p>
+            <div>
+                <button class="bit">
+                    <a href="ue_english.exe" download="file_name.extension">Download
+                        32-bit</a>
+                </button>
+                <button class="green">download 64-bit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
